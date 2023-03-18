@@ -8,6 +8,7 @@ body{
 }
 
 header{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,18 +31,18 @@ a{
 }
 
 a:hover{
-    color: rgb(26, 241, 152);
+    color: rgb(142, 233, 195);
     transition: 0.3s all;
 }
 
 #contato-btn{
-    border: 2px solid  rgb(26, 241, 152);
+    border: 2px solid  rgb(142, 233, 195);
     padding: 10px;
     border-radius: 15px;
 }
 
 #contato-btn:hover{
-    background-color:  rgb(26, 241, 152);
+    background-color:  rgb(142, 233, 195);
     color: white;
 }
 
@@ -50,7 +51,7 @@ h1{
 }
 
 #destaque-btn{
-    color: rgb(26, 241, 152);
+    color: rgb(142, 233, 195);
 }
 
 main{
@@ -66,7 +67,7 @@ h2{
 }
 
 span{
-    color:  rgb(26, 241, 152);
+    color:  rgb(80, 209, 155);
 }
 
 p{
@@ -90,7 +91,7 @@ form{
 form [type="submit"]{
     height: 50px;
     width: 50%;
-    background-color: rgb(26, 241, 152);
+    background-color:rgb(142, 233, 195);
     color: white;
     font-weight: bold;
 }
