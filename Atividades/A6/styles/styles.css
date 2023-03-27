@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: monospace, sans-serif;
+  }
+  
+  :root {
+    --color-text: #000;
+    --background-color: #fff;
+  }
+  
+  body {
+    /* position: absolute; */
+    top: 0;
+    /* left: 0; */
+    background: var(--background-color);
+    color: var(--color-text);
+    /* min-height: 100vh; */
+    /* padding: 80px 100px; */
+  }
+  
+  main {
+    position: absolute;
+    padding-bottom: 100vh;
+    padding-left: 80px;
+    padding-top: 100px;
+    padding-right: 80px;
+  }
+  
+  #darkmodeToggle {
+    display: none;
+  }
+  
+  #darkmodeToggle:checked + main {
+    --color-text: #fff;
+    --background-color: #000;
+  
+    color: var(--color-text);
+    background-color: var(--background-color);
+  }
+  
+  .darkmodeLabel {
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 100px;
+  }
+  
+  .darkmodeLabel::before {
+    content: "Dark";
+    position: absolute;
+    color: var(--background-color);
+    background: var(--color-text);
+    padding: 10px 20px;
+  }
+  
+  .darkmodeLabel:checked::before {
+    content: "Light";
+    color: var(--color-text);
+    background: var(--background-color);
+  }
+  
+  section img {
+    max-width: 500px;
+    float: left;
+    margin: 10px 20px 10px 0;
+    filter: inherit;
+  }
