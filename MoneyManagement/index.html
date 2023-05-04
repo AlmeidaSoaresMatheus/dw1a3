@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/money-management.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Money Management</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header_content container">
+      <img src="assets/logo.svg" alt="Logo Money Management">
+      <div class="toggle">
+        <input id="switch" type="checkbox" name="theme">
+        <label for="switch">Toggle</label>
+      </div>
+      
+    </div>
+  </header>
+  <main class="container">
+    <section id="balance">
+      <h2 class="sr-only">Balanço</h2>
+
+      <div class="card">
+        <h3>
+          <spam>Entradas</spam>
+          <img src="./assets/income.svg" alt="Imagem de Entradas">
+        </h3>
+        <p id="incomeDisplay">R$ 0,00</p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <span>Saídas</span>
+          <img src="./assets/expense.svg" alt="Imagem de Saídas">
+        </h3>
+        <p id="expenseDisplay">R$ 0,00</p>
+      </div>
+
+      <div class="card total">
+        <h3>
+          <span>Total</span>
+          <img src="./assets/total.svg" alt="Imagem Total">
+        </h3>
+        <p id="totalDisplay">R$ 0,00</p>
+      </div>
+
+    </section>
+
+    <section id="transaction">
+      <h2 class="sr-only">Transação</h2>
+
+      <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
+
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <div id="form">
+        <h2>Nova Transação</h2>
+        <form action="" onsubmit="Form.submit(event)">
+          <div class="input-group">
+            <label class="sr-only" for="description">Descrição</label>
+            <input type="text" name="description" id="description" placeholder="Descrição">
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="amount">Valor</label>
+            <input type="number" name="amount" id="amount" placeholder="0,00" step="0.01">
+            <small class="help">Use o sinal "-" (negativo) para despesa e "," (vírgula) para casas decimais</small>
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="date">Data</label>
+            <input type="date" name="date" id="date">
+          </div>
+
+          <div class="input-group actions">
+            <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+            <button>Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <a href="https://github.com/AlmeidaSoaresMatheus" target="_blank"><i class="fa fa-github" style="font-size: 35px;"></i></a>
+    <a href="https://www.linkedin.com/in/matheus-almeida-soares/" target="_blank">
+      <i class="fa fa-linkedin" style="font-size: 35px;"></i></a>
+    <a href="https://www.instagram.com/matheusalmeida_as/" target="_blank"><i class="fa fa-instagram"
+        style="font-size: 35px"></i></a>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
