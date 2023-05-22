@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Escolha uma cor para pré-visualizar o background">
+    <title>Aplicar blur</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/dw1a3/atividades/a9/css/style.css">
+
+</head>
+
+<body>
+    <fieldset class="moldura">
+        <h3>Aplique o filtro deslizando o slider a seguir</h3>
+        <input type="range" min="0" max="10" step="1" id="rangeBlur" value="0" onchange="aplicaFiltro('blur', 'rangeBlur', 'valorBlur', 'px')">
+        <code>img { filter: blur(<input id="valorBlur" value="0px" type="text" style="width: 60px">); }</code>
+        <p><img src="../Atividades/A9/imagens/imagem.jfif" alt="paisagem" class="imagem-blur" id="blur"></p>
+    </fieldset>
+    <script src="../Atividades/A9/js/main.js"></script>
+</body>
+
+</html>
