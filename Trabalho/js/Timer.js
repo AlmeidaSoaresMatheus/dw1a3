@@ -35,6 +35,7 @@ function timer(x) {
       clearInterval(interval);
       time.innerHTML = '00:00';
       audio.play();
+      document.title = 'Acabou!!!';
     } else if (seconds === 0) {
       minutes = minutes - 1;
       seconds = 59;
