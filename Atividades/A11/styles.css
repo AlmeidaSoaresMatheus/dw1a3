@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+small {
+    color: green;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    color: green;
+}
+
+/* Estilos do Bootstrap */
+/* Adicione aqui quaisquer personalizações extras do Bootstrap que você desejar */
